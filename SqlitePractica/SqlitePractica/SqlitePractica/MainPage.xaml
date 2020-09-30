@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:PracticaSQLite"
+             x:Class="PracticaSQLite.MainPage">
+
+    <StackLayout>
+        <Label
+            Text="Ingrese el usuario"
+            />
+        <Entry
+            x:Name="txtusuario"
+            />
+        <Label
+            Text="Ingrese el password"
+            />
+        <Entry
+            IsPassword="True"
+            x:Name="txtpass"
+            />
+        <Button
+            Clicked="BtnLogin_Clicked"
+            Text="iniciar sesión"
+            x:Name="btnLogin"
+            />
+
+        <Label
+            Text="Registrar"
+            x:Name="txtRegistrar"
+            >
+            <Label.GestureRecognizers>
+                <TapGestureRecognizer Tapped="TapGestureRecognizer_Tapped"/>
+            </Label.GestureRecognizers> 
+        </Label>
+    </StackLayout>
+
+</ContentPage>
